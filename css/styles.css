@@ -1,0 +1,282 @@
+/* Import font from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Homemade+Apple&family=Lovers+Quarrel&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Dancing+Script:wght@500&family=Homemade+Apple&family=Lovers+Quarrel&family=Ms+Madi&family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+}
+html {
+    /* background-color:  #2d1515;   */
+    /* background-image: linear-gradient(#5a2929, black); */
+    /* background-image: linear-gradient(
+        0deg,
+        hsl(0deg 0% 61%) 0%,
+        hsl(350deg 17% 66%) 8%,
+        hsl(349deg 33% 70%) 16%,
+        hsl(349deg 50% 74%) 24%,
+        hsl(349deg 67% 79%) 32%,
+        hsl(350deg 84% 83%) 41%,
+        hsl(350deg 100% 88%) 49%,
+        hsl(349deg 98% 81%) 57%,
+        hsl(350deg 95% 75%) 66%,
+        hsl(350deg 93% 68%) 74%,
+        hsl(350deg 90% 62%) 83%,
+        hsl(349deg 88% 55%) 92%,
+        hsl(350deg 85% 49%) 100%
+      ); */
+      background-image: linear-gradient(
+  0deg,
+  hsl(350deg 100% 88%) 0%,
+  hsl(346deg 100% 86%) 7%,
+  hsl(342deg 100% 84%) 13%,
+  hsl(339deg 100% 83%) 20%,
+  hsl(335deg 100% 81%) 27%,
+  hsl(332deg 100% 79%) 33%,
+  hsl(328deg 100% 77%) 40%,
+  hsl(325deg 100% 75%) 47%,
+  hsl(322deg 100% 73%) 53%,
+  hsl(319deg 100% 71%) 60%,
+  hsl(315deg 100% 69%) 67%,
+  hsl(312deg 100% 67%) 73%,
+  hsl(310deg 100% 65%) 80%,
+  hsl(307deg 100% 63%) 87%,
+  hsl(304deg 100% 61%) 93%,
+  hsl(300deg 95% 57%) 100%
+);
+}
+body {
+    /* color: #c0c0c0; */
+    color: #e6e6e6;
+    height: 100vh;
+    margin: 15px 15px 0 15px;
+    /* max-width: 480px; */
+}
+.heading {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Amiri Quran', serif;
+    font-size: 35pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.heading h3 {
+    margin-top: -10px;
+    color: #e038a0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 30pt;
+    letter-spacing: 3px;
+}
+.arabic-heading  {
+    font-family: 'Amiri Quran', serif;
+    font-size: 26pt;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+/* 
+* ---------------------------------------------------------- *
+* ---------------------------------------------------------- *
+* ------------ Make resposive with mobile screens ---------- *
+* ---------------------------------------------------------- *
+* ---------------------------------------------------------- *
+*/
+
+/* Small screens */
+@media (min-width: 310px) and (max-width: 767px) {
+   .heading {
+        font-size: 12pt;
+    }
+    .heading h3 {
+        font-size: 1.5em;
+    }
+    .arabic-heading p {
+        font-size: 13pt;
+    }
+  }
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 912px) {
+    .heading {
+        font-size: 26pt;
+     }
+     .heading h3 {
+        font-size: 1.6em;
+     }
+     .arabic-heading p {
+        font-size: 27pt;
+    }
+    }
+   /* Large screens */
+   @media (min-width: 992px) {
+    .heading {
+        font-size: 28pt;
+        }
+        .heading h3 {
+        font-size: 1.7em;
+        }
+        .arabic-heading p {
+            font-size: 29pt;
+        }
+    }
+  /* X-Large screens */
+  @media (min-width: 1200px) {
+    .heading {
+        font-size: 35pt;
+    }
+    .heading h3 {
+        font-size: 1.9em;
+    }
+    .arabic-heading p {
+        font-size: 36pt;
+    }
+}
+
+/* 
+* ---------------------------------------------------------- *
+* ---------------------------------------------------------- *
+* --------------- END with mobile screens ------------------ *
+* ---------------------------------------------------------- *
+* ---------------------------------------------------------- *
+*/
+
+.main-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 30px;
+}
+.main-photo img {
+    /* opacity: 70%;    */
+    opacity: 85%;   
+}
+
+.Cinnabon {
+    margin: 20px 10px 15px 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20pt;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+}
+
+/* 
+* ---------------------------------------- *
+* ----- Styles for the Cards images ----- *
+*----------------------------------------- *
+*/
+
+
+/* Style the Card container and its elements */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    /* width: min-content; */
+    width: fit-content;
+    padding: 20px;
+    /* margin: 0 15px; */
+    margin: 15px;
+    /* background: #fff; */
+    background-image: purple;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.04);
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card .card-image {
+    width: 280px;
+    height: 280px;
+    height: fit-content;
+    padding: 0 20px;
+    text-align: center;
+    /* background: rgb(49, 46, 46); */
+    border-radius: 12px;
+}
+.card .card-image img {
+    width: 100%;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.02)
+                rotate(-2deg)
+                translateX(-5px);
+}
+
+.card .card-content h3 {
+    color: #222;
+    font-size: 22px;
+    margin-top: 20px;
+    position: relative;
+
+
+}
+
+/* 
+* ---------------------------------------- *
+* ------ Styles for the love quote ------- *
+*----------------------------------------- *
+*/
+
+.end-quote {
+    margin: 40px 10px 0 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 17pt;
+}
+
+.end-quote p {
+    text-align: center;
+    color: rgb(43, 43, 43) 
+    
+}
+
+.end-quote strong {
+    color: crimson;
+    font-size: 1.38em ;
+    letter-spacing: 2px;
+}
+
+/* 
+* ---------------------------------------- *
+* -- Start making the Cards responsive --- *
+*----------------------------------------- *
+*/
+
+
+@media (max-width: 1280px) {
+    body {
+        height: unset;
+        padding: 30px 0;
+    }
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container .card {
+        margin: 20px;
+
+    }
+}
+
+/* 
+* ---------------------------------------- *
+* --- End making the Cards responsive ---- *
+*----------------------------------------- *
+*/
