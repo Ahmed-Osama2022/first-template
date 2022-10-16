@@ -91,7 +91,8 @@ body {
 /* Small screens */
 @media (min-width: 310px) and (max-width: 767px) {
    .heading {
-        font-size: 12pt;
+        /* font-size: 12pt; */
+        font-size: 1.5em;
     }
     .heading h3 {
         font-size: 1.5em;
@@ -103,7 +104,8 @@ body {
   /* Medium screens */
   @media (min-width: 768px) and (max-width: 912px) {
     .heading {
-        font-size: 26pt;
+        /* font-size: 26pt; */
+        font-size: 1.6em;
      }
      .heading h3 {
         font-size: 1.6em;
@@ -115,7 +117,7 @@ body {
    /* Large screens */
    @media (min-width: 992px) {
     .heading {
-        font-size: 28pt;
+        font-size: 1.8em;
         }
         .heading h3 {
         font-size: 1.7em;
@@ -127,7 +129,7 @@ body {
   /* X-Large screens */
   @media (min-width: 1200px) {
     .heading {
-        font-size: 35pt;
+        font-size: 3em ;
     }
     .heading h3 {
         font-size: 1.9em;
@@ -154,7 +156,8 @@ body {
 }
 .main-photo img {
     /* opacity: 70%;    */
-    opacity: 85%;   
+    opacity: 85%;
+    border-radius: 40%;   
 }
 
 .Cinnabon {
@@ -273,6 +276,7 @@ body {
         margin: 20px;
 
     }
+   
 }
 
 /* 
